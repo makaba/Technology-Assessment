@@ -93,7 +93,8 @@ There are no test cases for the data classes, because they are simply getters an
  
  for documentation I will intergrate the Swagger UI to expose the endpoints in our rest controller 
 
-
+{
+	
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -128,4 +129,5 @@ public class SwaggerConfig {
         return apiInfo;
     }
 }
+
 
