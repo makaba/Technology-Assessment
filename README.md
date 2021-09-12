@@ -11,7 +11,7 @@ as a discount).
 6. A user can get only one of the percentage based discounts on a bill.
 
 
-There are several ways to run a Spring Boot application on your local machine. One way is to execute the `main` method in the `RetailSiteApplication` class from your IDE.or one can run the app from command line
+There are several ways to run a Spring Boot application on your local machine. One way is to execute the `main` method in the `DiscounterApplication.java` class from your IDE.or one can run the app from command line
 ```shell
 mvn spring-boot:run
 ```
@@ -91,9 +91,22 @@ Run `mvn test` to run tests and generate code coverage report
 There are several test classes, which simply assert that the services work correctly. There is one "integration" test for the rest service, which mocks http request and asserts that responses. Some of the test classes share the same test logic, so a dedicated parent class is defined for them.
 There are no test cases for the data classes, because they are simply getters and setters.
  
- for documentation I will intergrate the Swagger UI to expose the endpoints in our rest endpoint for example
- 
+ for UML the doc folder contains the class-diagram.jpg, which is an image, displaying the UML diagrams of the Java classes.
 
+
+for documentation I will intergrate the Swagger UI to expose the endpoints in our rest endpoint for example for example add this class to the code to outline Swagger UI endpoints
+ 
+@Configuration
+public class SpringFoxConfig {                                    
+    @Bean
+    public Docket api() { 
+        return new Docket(DocumentationType.SWAGGER_2)  
+          .select()                                  
+          .apis(RequestHandlerSelectors.any())              
+          .paths(PathSelectors.any())                          
+          .build();                                           
+    }
+}
 
 
 
