@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * The Spring Boot Application.
  *
- * @author Radoslav Dimitrov
+ * @author amo
  */
 @SpringBootApplication
 public class DiscounterApplication {
