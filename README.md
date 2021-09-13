@@ -96,7 +96,10 @@ There are no test cases for the data classes, because they are simply getters an
 
 for documentation I will intergrate the Swagger UI to expose the endpoints in our rest endpoint for example for example add this class to the code to outline Swagger UI endpoints
  
-@Configuration
+
+```
+
+	@Configuration
 public class SpringFoxConfig {                                    
     @Bean
     public Docket api() { 
@@ -107,15 +110,6 @@ public class SpringFoxConfig {
           .build();                                           
     }
 }
-```
-{
-	"userInfo": {
-		"type": enumeration,
-		"data": object
-	},
-	"amount": number,
-	"otherData": object,
-	"containsGroceries": boolean
-}
+
 
 
