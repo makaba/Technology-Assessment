@@ -10,6 +10,9 @@ as a discount).
 5. The percentage based discounts do not apply on groceries.
 6. A user can get only one of the percentage based discounts on a bill.
 
+requirements 
+java 1.8
+maven 
 
 There are several ways to run a Spring Boot application on your local machine. One way is to execute the `main` method in the `DiscounterApplication.java` class from your IDE.or one can run the app from command line
 ```shell
