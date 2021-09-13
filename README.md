@@ -107,6 +107,15 @@ public class SpringFoxConfig {
           .build();                                           
     }
 }
-
+```
+{
+	"userInfo": {
+		"type": enumeration,
+		"data": object
+	},
+	"amount": number,
+	"otherData": object,
+	"containsGroceries": boolean
+}
 
 
