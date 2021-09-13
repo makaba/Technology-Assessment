@@ -12,7 +12,7 @@ as a discount).
 
 requirements 
 java 1.8,
-maven .if you have installed the java 11 change in porm.xml file the java version.to import the project in your ide or run as a maven project jst rename the foulder discounter from discounter-master
+maven .if you have installed the java 11 change in porm.xml file the java version.to import the project in your ide or run as a maven project just rename the foulder discounter from discounter-master
 
 There are several ways to run a Spring Boot application on your local machine. One way is to execute the `main` method in the `DiscounterApplication.java` class from your IDE.or one can run the app from command line
 ```shell
