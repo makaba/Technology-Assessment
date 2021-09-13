@@ -110,6 +110,35 @@ public class SpringFoxConfig {
           .build();                                           
     }
 }
+To bring it in, we need the following dependency declaration in our Maven POM.
+
+
+<dependency>
+
+    <groupId>io.springfox</groupId>
+
+    <artifactId>springfox-swagger2</artifactId>
+
+    <version>2.6.1</version>
+
+    <scope>compile</scope>
+
+</dependency>
+
+In addition to Sprinfox, we also require Swagger UI. The code to include Swagger UI is this.
+
+<dependency>
+
+    <groupId>io.springfox</groupId>
+
+    <artifactId>springfox-swagger-ui</artifactId>
+
+    <version>2.6.1</version>
+
+    <scope>compile</scope>
+
+</dependency>
+
 
 
 
